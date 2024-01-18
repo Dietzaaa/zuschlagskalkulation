@@ -1,0 +1,59 @@
+﻿<Window x:Class="Zuschlagskalkulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zuschlagskalkulation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <Image Source="/Bild/Geldsack.PNG" Stretch="Fill"/>
+
+        <StackPanel Margin="10" Orientation="Vertical">
+
+        <TextBlock></TextBlock>
+        <TextBlock Margin="250,0,0,0" Width="536"><Bold>1. Angebot <TextBlock Margin="135,0,0,0">2. Angebot</TextBlock><TextBlock Margin="135,0,0,0">3. Angebot</TextBlock></Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Fertigungsmaterial in Euro: </Bold><TextBox MaxLength="14" TextAlignment="Right" x:Name="fertigungsmaterial" Margin="71,0,0,0" Width=" 100">0</TextBox><Bold>€</Bold><TextBox MaxLength="14" TextAlignment="Right" x:Name="fertigungsmaterial2" Margin="91,0,0,0" Width=" 100">0</TextBox><Bold>€</Bold><TextBox MaxLength="14" TextAlignment="Right" x:Name="fertigungsmaterial3" Margin="90,0,0,0" Width=" 100">0</TextBox><Bold>€</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Materialgemeinkosten in Prozent: </Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="materialgemeinkosten" Margin="33,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="materialgemeinkosten2" Margin="88,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="materialgemeinkosten3" Margin="86,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Fertigungslöhne Euro: </Bold><TextBox MaxLength="14" TextAlignment="Right" x:Name="fertigungslöhne" Margin="100,0,0,0"  Width=" 99">0</TextBox><Bold>€</Bold><TextBox MaxLength="14" TextAlignment="Right" x:Name="fertigungslöhne2" Margin="92,0,0,0"  Width="99">0</TextBox><Bold>€</Bold><TextBox MaxLength="14" TextAlignment="Right" x:Name="fertigungslöhne3" Margin="90,0,0,0"  Width=" 99">0</TextBox><Bold>€</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Fertigungsgemeinkosten Prozent: </Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="fertigungsgemeinkosten" Margin="34,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="fertigungsgemeinkosten2" Margin="88,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="fertigungsgemeinkosten3" Margin="86,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Verwaltungsgemeinkosten in Prozent: </Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="verwaltungsgemeinkosten" Margin="11,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="verwaltungsgemeinkosten2" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="verwaltungsgemeinkosten3" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Vertriebsgemeinkosten in Prozent: </Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="vertriebsgemeinkosten" Margin="30,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="vertriebsgemeinkosten2" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="vertriebsgemeinkosten3" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Gewinnzuschlag in Prozent: </Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="gewinnzuschlag" Margin="70,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="gewinnzuschlag2" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="5" TextAlignment="Right" x:Name="gewinnzuschlag3" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Skonto in Prozent: </Bold><TextBox MaxLength="4" TextAlignment="Right" x:Name="skonto" Margin="121,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="4" TextAlignment="Right" x:Name="skonto2" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="4" TextAlignment="Right" x:Name="skonto3" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Rabatt in Prozent: </Bold><TextBox MaxLength="4" TextAlignment="Right" x:Name="rabatt" Margin="123,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="4" TextAlignment="Right" x:Name="rabatt2" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold><TextBox MaxLength="4" TextAlignment="Right" x:Name="rabatt3" Margin="87,0,0,0"  Width=" 100">0</TextBox><Bold>%</Bold></TextBlock>
+        <TextBlock Margin="10,10,0,0"><Bold>Mehrwertsteuer in Prozent: </Bold><TextBox MaxLength="2" TextAlignment="Right" x:Name="mwst" Margin="69,0,0,0"  Width=" 100">19</TextBox><Bold>%</Bold><TextBox MaxLength="2" TextAlignment="Right" x:Name="mwst2" Margin="87,0,0,0"  Width=" 100">19</TextBox><Bold>%</Bold><TextBox MaxLength="2" TextAlignment="Right" x:Name="mwst3" Margin="87,0,0,0"  Width=" 100">19</TextBox><Bold>%</Bold></TextBlock>
+
+            <Button  Click="Button_Click" Margin="293,10,90,0">
+                <Bold>Ausrechnen</Bold>
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property= "Background" Value="Gainsboro"/>
+                        <Setter Property= "BorderBrush" Value="Black"/>
+                        <Setter Property= "BorderThickness" Value="1"/>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+        <TextBlock></TextBlock>
+        <TextBlock Margin="10,0,10,0"><Bold>Netto:<TextBlock TextAlignment="Right" Width="150" MaxWidth="150"  Margin="139,0,10,0" x:Name="tb_netto"></TextBlock><TextBlock TextAlignment="Right" Width="150" MaxWidth="150"  Margin="35,0,10,0" x:Name="tb_netto2"></TextBlock><TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="40,0,10,0" x:Name="tb_netto3"></TextBlock></Bold></TextBlock>
+        <TextBlock Margin="10,0,10,0"><Bold>Mwst:<TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="140,0,10,0" x:Name="tb_mwst"></TextBlock><TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="35,0,10,0" x:Name="tb_mwst2"></TextBlock><TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="40,0,10,0" x:Name="tb_mwst3"></TextBlock></Bold></TextBlock>
+        <TextBlock Margin="10,0,10,0"><Bold>Brutto:<TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="135,0,10,0" x:Name="tb_brutto"></TextBlock><TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="35,0,10,0" x:Name="tb_brutto2"></TextBlock><TextBlock TextAlignment="Right" Width="150" MaxWidth="150" Margin="40,0,10,0" x:Name="tb_brutto3"></TextBlock></Bold></TextBlock><TextBlock/>
+        
+        <Button Click="Button_Click_1" Margin="293,0,90,0"><Bold>Nettodifferenz berechnen</Bold>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property= "Background" Value="Gainsboro"/>
+                    <Setter Property= "BorderBrush" Value="Black"/>
+                    <Setter Property= "BorderThickness" Value="1"/>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <TextBlock Margin="200,0,0,0" Width="570"><Bold>1. Angebot<TextBlock Margin="20,0,0,0">Nettodifferenz zwischen:<TextBlock Margin="20,0,0,0">2. Angebot<TextBlock Margin="20,0,0,0">Nettodifferenz zwischen:<TextBlock Margin="20,0,0,0">3. Angebot</TextBlock></TextBlock></TextBlock></TextBlock></Bold></TextBlock>
+        <TextBlock Margin="260,0,0,0" Width="500"><Bold><TextBlock TextAlignment="Right" x:Name="angebot12" Width="100" Margin=" 10,0,0,0"></TextBlock><TextBlock TextAlignment="Right" x:Name="angebot23" Width="100" Margin="130,0,0,0"></TextBlock></Bold></TextBlock>
+        <TextBlock Margin="260,0,0,0" Width="500"><Bold><TextBlock TextAlignment="Right" x:Name="prozent12" Width="100" Margin=" 13,0,0,0"></TextBlock><TextBlock TextAlignment="Right" x:Name="prozent23" Width="100" Margin="130,0,0,0"></TextBlock></Bold></TextBlock>
+    </StackPanel>
+    </Grid>
+</Window>
